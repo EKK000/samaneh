@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservation</title>
+    <!-- Include Bootstrap CSS for styling -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='plugins/bootstrap5/css/bootstrap.rtl.min.css') }}">
+    <!-- Custom styles for carousel and form -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Bootstrap Datepicker and Timepicker CSS -->
+    
+    <link href="{{ url_for('static', filename='plugins/gallery/dist/simple-lightbox.min.css') }}" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+</head>
+<body>
+
+<header>
+    <div class="bg-blue-400 mx-auto text-center p-6">
+        <h1 class="titr font-bold text-4xl text-center py-6" >تایید رزرو واحد {{ location.address }}</h1>
+    </div>
+</header>
+
+        <div class=" border-2 border-info rounded-4xl p-6 mx-auto block my-2 w-75  " >
+            <div class="gallery flex  justify-center justify-self-center ">
+            {% for image in location.images %}
+                <a class= " p-1  " rel="rel1" href= "{{ url_for('static', filename='images/' + image.path) }}">
+                <img class="rounded-2 "src="{{ url_for('static', filename='images/' + image.path) }}"  >
+                </a>
+            {% endfor %}
+        </div>
+        </div>
+        
+
+    
+
+    <div class"form-container mx-auto">
+        <!-- Reservation Form -->
+        <form method="POST" action="/confirm_reservation/{{ location.id }}" class="form">
+            
+
+
+                <h1 class="text-xl text-center titr"> لطفا زمان ورود و خروج خود را از کادر زیر انتخاب کنید </h1>
+                
+                <div id="app" class="flex justify-center">
+                    <date-picker class="block mx_auto  w-25 py-4"></date-picker>
+                             
+                 </div>
+                
+                <button type="submit" class="block btn btn-primary text-xl font-bold p-3 w-25 mx-auto">تایید رزرو<button>
+                    
+                
+                    
+                
+            </div>           
+            
+            
+        </form>
+                
+    </div>            
+    <!-- Include Bootstrap JS and Popper.js for carousel functionality -->
+    <script src="{{ url_for('static', filename='plugins/bootstrap5/js/bootstrap.bundle.min.js') }}"></script>
+    
+    <script src="{{ url_for('static', filename='plugins/gallery/dist/simple-lightbox.min.js') }}"></script>
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/@alireza-ab/vue-persian-datepicker@2.3.0/dist/datepicker.min.js"></script>
+    <!-- Initialize Datepicker and Timepicker -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue-numeric-keypad@1.2.3/dist/vue-numeric-keypad.min.js"></script>
+
+...
+
+    <script>
+        new Vue({
+                el:'#app',
+                components:{
+                    datePicker,
+                    
+                },
+                
+
+
+            })
+    </script>
+
+
+    <script>
+        var gallery =new SimpleLightbox('.gallery a', {
+            widthRatio: 0.8,
+            heightRatio: 0.9,
+                });
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سامانه اجاره</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='plugins/bootstrap5/css/bootstrap.rtl.min.css') }}"
+    />
+    <!-- Custom styles for carousel and form -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+  </head>
+  <header>
+    <div class="bg-blue-400 mx-auto text-center p-6">
+      <h1 class="titr bg text-4xl font-bold px-6 py-3">
+        سامانه رسمی اجاره روزانه و ساعتی واحدهای مسکونی و اداری
+      </h1>
+
+      <h1 class="titr bg text-3xl font-bold px-6 py-2">
+        تحت نظارت وزارت میراث فرهنگی , گردشگری و صنایع دستی
+      </h1>
+      <h1 class="titr bg text-2xl font-bold px-6 py-1">
+        اداره کل گردشگری استان تهران
+      </h1>
+    </div>
+  </header>
+  <body dir="rtl">
+    <div class="border-2 rounded-5 my-4 mx-auto w-75 p-6 border-info">
+      <p dir="rtl" class="bnazanin text-center p-10 font-medium text-xl">
+        لطفا جهت اطلاع از ظرفیت واحذها و رزرو واحد مورد نظر خود را از لیست زیر
+        انتخاب کنید
+      </p>
+
+      <!-- Responsive Grid of Card-like Elements -->
+      <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {% for location in locations %}
+        <a
+          href="{{ url_for('reservation', location_id=location.id) }}"
+          class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out"
+          style="text-decoration: none; color: inherit"
+        >
+          <div>
+            <img
+              src="{{ url_for('static', filename='images/' + location.main_image_path) }}"
+              alt="{{ location.address }}"
+              class="w-full h-48 object-cover rounded-t-lg"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold">{{ location.address }}</h3>
+            <!-- Additional information can go here if needed -->
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>

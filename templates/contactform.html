@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Examples</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='plugins/bootstrap5/css/bootstrap.rtl.min.css') }}">
+</head>
+<body dir="rtl">
+
+      <div class"flex align-center items-center justify-center mx-auto">
+
+            <h1 class="text-3xl p-6 font-bold text-center titr">واحد میدان ولیعصر از تاریخ ۱۵  لغایت ۱۶ اسفند ماه ۱۴۰۳ خالی میباشد و امکان رزرو مهیاست </h1>
+            
+
+
+        <!-- Reservation Form -->
+        <form method="POST" action="/payment/{{ location.id }}" class="form" >
+                
+          
+          
+                
+          <div id="app">
+              <date-picker class="p-4"></date-picker>
+              
+          </div>
+          
+          <button type="submit"  class="block px-12 mx-auto btn btn-primary">تایید رزرو</button>  
+          
+                
+        </form>
+      </div>           
+            
+      
+                
+    </div>   
+
+</body>
+</html>
